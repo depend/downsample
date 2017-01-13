@@ -6,11 +6,9 @@
 #include <boost/shared_array.hpp>
 #include <zi/concurrency/concurrency.hpp>
 
-using namespace std;
-
 class Proton{
 public:
-	Proton(size_t data_size, vector<unsigned int> dimensions, unsigned int interval);
+	Proton(size_t data_size, std::vector<unsigned int> dimensions, unsigned int interval);
 public:
 	template <typename FUNC>
 	void fold_apply(FUNC apply) {
@@ -33,13 +31,13 @@ public:
 		}
 	}
 private:
-	void chunk(vector<unsigned int> &tails, vector<unsigned int> &ends, vector<unsigned int> &steps, unsigned int interval, unsigned int max_steps);
+	void chunk(std::vector<unsigned int> &tails, std::vector<unsigned int> &ends, std::vector<unsigned int> &steps, unsigned int interval, unsigned int max_steps);
 	void expand(unsigned int* indices, size_t indices_size, unsigned int interval, unsigned int max_steps);
 private:
 	size_t data_size;
 	size_t dimensions_size;
 	unsigned int interval;
-	vector<unsigned int> dimensions;
+	std::vector<unsigned int> dimensions;
 };
 
 #endif

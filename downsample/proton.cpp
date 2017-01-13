@@ -2,6 +2,8 @@
 #include "proton.h"
 #include "utils.h"
 
+using namespace std;
+
 Proton::Proton(size_t data_size, vector<unsigned int> dimensions, unsigned int interval) :
 data_size(data_size),
 dimensions(dimensions),

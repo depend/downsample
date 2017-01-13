@@ -4,15 +4,13 @@
 #include <vector>
 #include "histogram.h"
 
-using namespace std;
-
 class Utils{
 public:
-	static void print(string name, unsigned int* a, size_t size);
-	static void print(string name, vector<unsigned int> v);
-	static void print(string name, Histogram* h, size_t size);
+	static void print(std::string name, unsigned int* a, size_t size);
+	static void print(std::string name, std::vector<unsigned int> v);
+	static void print(std::string name, Histogram* h, size_t size);
 
-	static void split(string line, vector<unsigned int> &numbers);
+	static void split(std::string line, std::vector<unsigned int> &numbers);
 };
 
 #endif

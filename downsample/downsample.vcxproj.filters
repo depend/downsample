@@ -33,9 +33,6 @@
     <ClInclude Include="histogram.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="indexer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
